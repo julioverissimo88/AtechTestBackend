@@ -7,7 +7,7 @@ namespace AtechTestBackend.infrastructure.Interfaces
 {
     public interface IBaseRepository<TEntity> where TEntity : class
     {
-        TEntity GetById(long id);
+        TEntity GetById(int id);
         IEnumerable<TEntity> GetAll();
         void Add(TEntity obj);
         void Update(TEntity obj);

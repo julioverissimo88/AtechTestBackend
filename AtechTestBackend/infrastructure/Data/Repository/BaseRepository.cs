@@ -17,7 +17,7 @@ namespace AtechTestBackend.infrastructure.Data.Repository
             _context = Context;
         }
 
-        public virtual TEntity GetById(long id)
+        public virtual TEntity GetById(int id)
         {
             return _context.Set<TEntity>().Find(id);
         }
